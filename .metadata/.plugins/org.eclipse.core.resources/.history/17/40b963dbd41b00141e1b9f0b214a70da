@@ -1,0 +1,20 @@
+package Game;
+
+import javax.swing.JFrame;
+
+public class Game {
+	
+	public static void main (String[] args){
+		
+		Snake snake = new Snake();
+		
+		Board board = new Board(snake);
+		
+		GameEvent event = new GameEvent(board);
+	//	event.gameLoop();
+		
+		
+	}
+	
+
+}

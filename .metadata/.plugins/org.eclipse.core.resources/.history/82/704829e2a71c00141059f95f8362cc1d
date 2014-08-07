@@ -1,0 +1,39 @@
+package Game;
+
+public class Snake {
+	
+	private int x = 150;
+	private int y = 15;
+	private int size = 4;
+	private String dir = "down";
+	
+	public Snake() {
+	}
+	
+	
+	public int getX(){
+				
+		return x;
+	}
+	
+	public int getY(){
+		return y;
+	}
+	
+
+	public int getSize(){
+		return size;
+	}
+	
+	public void setX(){
+		x += 0;
+	}
+	
+	public void setY(){
+		y += 1;
+	}
+	
+	public void sizeUp(){
+		size += 4;
+	}
+}

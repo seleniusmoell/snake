@@ -1,0 +1,8 @@
+package Game;
+
+public class Direction {
+	String up;
+	String down;
+	String left;
+	String right;
+}

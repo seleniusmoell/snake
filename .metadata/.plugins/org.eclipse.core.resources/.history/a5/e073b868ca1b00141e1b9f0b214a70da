@@ -1,0 +1,17 @@
+package Game;
+
+import javax.swing.JFrame;
+
+public class GameEvent {
+	private Snake s;
+	private Board b;
+	private JFrame f = new JFrame("Snake");	
+	
+	public GameEvent (Snake snake, Board board){
+		s = snake;
+		b = board; 			
+		b.openWindow(f);
+	}	
+	
+
+}

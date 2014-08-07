@@ -1,0 +1,19 @@
+package Game;
+
+public class Snake {
+	
+	private int x;
+	private int y;
+	private int [] positionsxy;
+	
+	public Snake() {
+		x = 125;
+		y = 125;
+		positionsxy [0] = x;
+		positionsxy [1] = y;
+	}
+	
+	
+	public getPosition
+
+}

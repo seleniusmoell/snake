@@ -1,0 +1,30 @@
+package Game;
+
+import javax.swing.JFrame;
+
+public class Game {
+
+	public static void main (String[] args) throws InterruptedException{
+
+		Snake snake = new Snake();
+
+		Board board = new Board(snake);
+
+		JFrame f = new JFrame("Snake");			
+		board.openWindow(f);
+
+		// test game loop
+		while (true){
+			board.moveSnake();
+			board.repaint(10, 0, 0, 300, 300);
+			Thread.sleep(3);
+		}
+		
+
+		//	GameEvent event = new GameEvent(board);
+			//	event.gameLoop();
+
+	}
+}
+
+

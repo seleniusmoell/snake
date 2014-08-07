@@ -1,0 +1,27 @@
+package Game;
+
+public class Snake {
+	
+	private int x;
+	private int y;
+	private int [] posxy;
+	
+	public Snake() {
+		x = 125;
+		y = 125;
+		posxy [1] = x;
+		posxy [2] = y;
+	}
+	
+	
+	public int [] getPosition(){
+				
+		return posxy;
+	}
+	
+	public void moveSnake() {
+		x += 1;
+		y += 1;
+	}
+
+}
