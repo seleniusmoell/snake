@@ -1,0 +1,24 @@
+package Game;
+
+import javax.swing.JFrame;
+
+public class Game {
+
+	public static void main (String[] args) throws InterruptedException{
+
+		Snake snake = new Snake();
+
+		Board board = new Board(snake);
+		
+		JFrame f = new JFrame("Snake");	
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(350, 350);
+		f.setVisible(true);
+
+		GameEvent event = new GameEvent(board);
+
+
+	}
+}
+
+

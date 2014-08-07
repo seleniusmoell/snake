@@ -9,13 +9,14 @@ public class Game {
 		JFrame frame = new JFrame("Snake");	
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(350, 350);
-		frame.setVisible(true);	
+		frame.setVisible(true);
+		
 
 		Snake snake = new Snake();
 
-		Board board = new Board();
+		Board board = new Board(snake);
 
-		GameEvent event = new GameEvent(snake);
+		GameEvent event = new GameEvent(board, frame);
 
 	}
 }

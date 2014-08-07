@@ -1,0 +1,15 @@
+package Game;
+
+import javax.swing.JFrame;
+import java.awt.Graphics;
+
+public class GameEvent {
+	private Board b;
+	
+	public GameEvent (Board board, JFrame frame){
+		b = board; 					
+		b.addBoard(f);
+	}	
+	
+
+}

@@ -5,17 +5,18 @@ import javax.swing.JFrame;
 public class Game {
 
 	public static void main (String[] args) throws InterruptedException{
+
+		Snake snake = new Snake();
+
+		Board board = new Board(snake);
 		
 		JFrame frame = new JFrame("Snake");	
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(350, 350);
-		frame.setVisible(true);	
+		frame.setVisible(true);
 
-		Snake snake = new Snake();
+		GameEvent event = new GameEvent(board, frame);
 
-		Board board = new Board();
-
-		GameEvent event = new GameEvent(snake);
 
 	}
 }

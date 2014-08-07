@@ -11,11 +11,7 @@ public class Game {
 		frame.setSize(350, 350);
 		frame.setVisible(true);	
 
-		Snake snake = new Snake();
-
-		Board board = new Board();
-
-		GameEvent event = new GameEvent(snake);
+		GameEvent event = new GameEvent(board, frame);
 
 	}
 }

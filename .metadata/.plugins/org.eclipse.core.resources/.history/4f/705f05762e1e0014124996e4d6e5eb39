@@ -16,7 +16,7 @@ package Game;
 
 public class GameEvent extends JPanel implements ActionListener, KeyListener {	
 		private Snake s;
-		private GameEvent ge;
+		private Board b;
 
 		private boolean upPressed = false;
 		private boolean downPressed = false;
@@ -24,7 +24,7 @@ public class GameEvent extends JPanel implements ActionListener, KeyListener {
 		private boolean leftPressed = false;
 
 
-		public GameEvent (Snake snake){
+		public Board (Snake snake){
 			s = snake;
 
 			//listen to key presses
@@ -40,9 +40,9 @@ public class GameEvent extends JPanel implements ActionListener, KeyListener {
 			moveSnake();
 		}
 
-		public void addGameEvent (JFrame f) {	
-			ge = new GameEvent(s);
-			f.add(ge);
+		public void addBoard (JFrame f) {	
+			b = new Board (s);
+			f.add(b);
 		}
 
 		@Override

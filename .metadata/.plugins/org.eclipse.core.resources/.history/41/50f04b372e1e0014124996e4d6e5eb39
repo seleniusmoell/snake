@@ -1,0 +1,17 @@
+package Game;
+
+import javax.swing.JFrame;
+
+public class Game {
+
+	public static void main (String[] args) throws InterruptedException{
+		
+		JFrame frame = new JFrame("Snake");	
+		
+
+		GameEvent event = new GameEvent(frame);
+
+	}
+}
+
+

@@ -13,9 +13,9 @@ public class Game {
 
 		Snake snake = new Snake();
 
-		Board board = new Board();
+		Board board = new Board(snake);
 
-		GameEvent event = new GameEvent(snake);
+		GameEvent event = new GameEvent(board, frame);
 
 	}
 }
