@@ -1,21 +1,21 @@
 package Game;
 
+import java.awt.EventQueue;
+
 import javax.swing.JFrame;
 
 public class Game {
 
 	public static void main (String[] args) throws InterruptedException{
-		
-		JFrame frame = new JFrame("Snake");	
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(350, 350);
-		frame.setVisible(true);	
 
-		Snake snake = new Snake();
+		EventQueue.invokeLater(new Runnable() {
 
-		Board board = new Board();
-
-		GameEvent event = new GameEvent(snake);
+			@Override
+			public void run() {
+				JFrame frame = new GameEvent();
+				frame.setVisible(true);
+				}
+		});
 
 	}
 }
