@@ -15,16 +15,20 @@ public class TAdapter implements KeyListener {
 
 		switch (e.getKeyCode()) {
 		case KeyEvent.VK_UP: 
-			snake.setDirection(DIRECTION.up);
+			if(snake.getDirection() != DIRECTION.down)
+				snake.setDirection(DIRECTION.up);
 			break;
 		case KeyEvent.VK_DOWN :
-			snake.setDirection(DIRECTION.down);
+			if(snake.getDirection() != DIRECTION.up)
+				snake.setDirection(DIRECTION.down);
 			break;
 		case KeyEvent.VK_LEFT:
-			snake.setDirection(DIRECTION.left);
+			if(snake.getDirection() != DIRECTION.right)
+				snake.setDirection(DIRECTION.left);
 			break;
 		case KeyEvent.VK_RIGHT:
-			snake.setDirection(DIRECTION.right);
+			if(snake.getDirection() != DIRECTION.left)
+				snake.setDirection(DIRECTION.right);
 			break;
 		default: break;
 		}
